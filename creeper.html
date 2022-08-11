@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+<canvas width="600" height="400"></canvas>
+<h1>Dibujando a Creeper con canvas</h1>
+
+</body>
+
+<script type="text/javascript">
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	// dibujo la cabeza
+
+	pincel.fillStyle = 'darkgreen'
+	pincel.fillRect(200, 50, 350, 300);
+
+	// Dibujo los ojos
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(250, 110, 90, 90);
+	pincel.fillRect(410, 110, 90, 90);
+
+	// Dibujo la nariz
+
+	pincel.fillRect(340, 200, 70, 100);
+
+	// Dibujo la boca
+
+    pincel.fillRect(300, 240, 40, 110);
+    pincel.fillRect(410, 240, 40, 110);
+	
+</script>
+</html>
